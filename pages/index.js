@@ -1,16 +1,33 @@
 import Head from 'next/head'
+import Header from './components/header/Header'
+import CTA from './containers/hero/CTA/CTA'
+
+import Hero from './containers/hero/Hero'
 
 export default function Home() {
   return (
+
+    <>
+  
+    <Header />
+    <Hero />
+    <CTA />
+
+
     <div className="container">
+ 
+    
+     
+
       <Head>
+
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main>
         <h1 className="title">
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+          Welcome to <a href="https://nextjs.org"></a>
         </h1>
 
         <p className="description">
@@ -67,6 +84,8 @@ export default function Home() {
           flex-direction: column;
           justify-content: center;
           align-items: center;
+
+          background-color: black;
         }
 
         main {
@@ -76,6 +95,7 @@ export default function Home() {
           flex-direction: column;
           justify-content: center;
           align-items: center;
+          background-color: black;
         }
 
         footer {
@@ -198,12 +218,13 @@ export default function Home() {
           font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
             Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
             sans-serif;
+          background-color: black;
         }
 
         * {
           box-sizing: border-box;
         }
       `}</style>
-    </div>
+    </div></>
   )
 }
